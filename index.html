@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>New Stuff</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="navbar">
+
+            <div class="logo">
+                <img src="/images/basketball.png" alt="">
+            </div>
+            <nav>
+                <ul>
+
+                    <li>
+                        <a href="#About ">About</a>
+                    </li>
+
+
+                    <li>
+                        <a href="#services ">Services</a>
+                    </li>
+
+
+                    <li>
+                        <a href="#blog ">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contacts</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+            <div class="user">
+                <p>@kerry_komar</p>
+                <img src="/images/6RhH8bKR.jpg">
+
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <img src="/images/search.png" class="search-icon">
+            <div class="social-links">
+                <img src="/images/twitter.png" alt="">
+                <img src="/images/instagram.png" alt="">
+                <img src="/images/facebook.png" alt="">
+                <img src="/images/gmail.png" alt="">
+
+            </div>
+            <img src="/images/info.png" class="info-icon">
+        </div>
+
+        <div class="msg-contaner">
+            <div id="slider">
+                <div class=" msg-col ">
+                    <h1>Basketball</h1>
+                    <p>Basketball is a game played between two teams of five players each on a rectangular court, usually indoors. Each team tries to score by tossing the ball through the opponent's goal, an elevated horizontal hoop and net called a basket.</p>
+                    <a href=" ">Learn More </a>
+                </div>
+                <div class="msg-col ">
+                    <h1>Kobe</h1>
+                    <p>Kobe Bean Bryant was an American professional basketball player. A shooting guard, he spent his entire career with the Los Angeles Lakers in the National Basketball Association.</p>
+                    <a href=" ">Learn More </a>
+                </div>
+                <div class="msg-col ">
+                    <h1>Mamba </h1>
+                    <p>The Mamba Mentality is a mindset for constant self-improvement in the pursuit of your highest potential in life.</p>
+                    <a href=" ">Learn More </a>
+                </div>
+                <div class="msg-col ">
+                    <h1>Kobe Career</h1>
+                    <p>Kobe Bryant never played for the Hornets and started his NBA career in 1996-97 with the Lakers. By the 1997-98 season, Bryant was an All-Star -- an honor he'd accomplish 18 times in his career. After years of playoff letdowns, Bryant
+                        and the Lakers won the NBA title in 2000.</p>
+                    <a href=" ">Learn More </a>
+                </div>
+            </div>
+        </div>
+        <div class="controller ">
+
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+            <div id="line4"></div>
+            <div id="active"></div>
+        </div>
+    </div>
+    <script>
+        var slider = document.getElementById('slider');
+        var active = document.getElementById('active');
+        var line1 = document.getElementById('line1');
+        var line2 = document.getElementById('line2')
+        var line3 = document.getElementById('line3');
+        var line4 = document.getElementById('line4');
+
+
+        line1.onclick = function() {
+            slider.style.transform = 'translateX(0)';
+
+
+            active.style.top = "0px";
+        }
+        line2.onclick = function() {
+            slider.style.transform = 'translateX(-25%)';
+
+            active.style.top = "80px";
+        }
+        line3.onclick = function() {
+            slider.style.transform = 'translateX(-50%)';
+
+            active.style.top = "160px";
+        }
+        line4.onclick = function() {
+            slider.style.transform = 'translateX(-75%)';
+            active.style.top = "240px";
+        }
+    </script>
+
+
+
+</body>
+
+</html>
